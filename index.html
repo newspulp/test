@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400|ABeeZee:400|Rammetto+One:400|Ubuntu:500");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+    </style>
+    <style>
+      .boost-yourself {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.boost-yourself .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1440px;
+  height: 3431px;
+  position: relative;
+}
+
+.boost-yourself .top-header-module {
+  position: absolute;
+  width: 1440px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.boost-yourself .overlap-group {
+  position: relative;
+  width: 1442px;
+  height: 52px;
+  top: -1px;
+  left: -1px;
+  background-color: #1f2a32;
+}
+
+.boost-yourself .wij-zijn-concapps {
+  position: absolute;
+  top: 15px;
+  left: 655px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.boost-yourself .icon-search {
+  left: 1282px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 14px;
+}
+
+.boost-yourself .ic-search {
+  position: relative;
+  height: 24px;
+}
+
+.boost-yourself .shape {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 3px;
+  left: 3px;
+}
+
+.boost-yourself .img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 555px;
+  left: -5309px;
+}
+
+.boost-yourself .icon-call {
+  left: 1248px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 14px;
+}
+
+.boost-yourself .facebook {
+  position: absolute;
+  width: 7px;
+  height: 14px;
+  top: 19px;
+  left: 136px;
+}
+
+.boost-yourself .twitter {
+  position: absolute;
+  width: 14px;
+  height: 11px;
+  top: 20px;
+  left: 181px;
+}
+
+.boost-yourself .linkedin {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 18px;
+  left: 236px;
+}
+
+.boost-yourself .youtube {
+  position: absolute;
+  width: 14px;
+  height: 10px;
+  top: 20px;
+  left: 287px;
+  background-image: url(https://c.animaapp.com/33LkDnZQ/img/shape-1.svg);
+  background-size: 100% 100%;
+}
+
+.boost-yourself .menu-module {
+  position: absolute;
+  width: 1440px;
+  height: 130px;
+  top: 50px;
+  left: 1px;
+  overflow: hidden;
+}
+
+.boost-yourself .overlap {
+  position: relative;
+  width: 1442px;
+  height: 132px;
+  top: -1px;
+  left: -1px;
+  background-color: #ffffff;
+}
+
+.boost-yourself .menu-item {
+  left: 1231px;
+  position: absolute;
+  top: 54px;
+  font-family: "ABeeZee", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.boost-yourself .text-wrapper {
+  left: 1120px;
+  position: absolute;
+  top: 54px;
+  font-family: "ABeeZee", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.boost-yourself .menu-item-2 {
+  left: 1009px;
+  position: absolute;
+  top: 54px;
+  font-family: "ABeeZee", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.boost-yourself .menu-item-3 {
+  left: 898px;
+  position: absolute;
+  top: 54px;
+  font-family: "ABeeZee", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.boost-yourself .text-wrapper-2 {
+  position: absolute;
+  top: 31px;
+  left: 136px;
+  font-family: "Rammetto One", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.boost-yourself .header {
+  top: 180px;
+  position: absolute;
+  width: 1440px;
+  height: 750px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.boost-yourself .overlap-2 {
+  position: relative;
+  height: 750px;
+  background-image: url(https://c.animaapp.com/33LkDnZQ/img/rectangle.png);
+  background-size: 100% 100%;
+}
+
+.boost-yourself .wij-zijn-concapps-2 {
+  width: 1170px;
+  top: 255px;
+  left: 135px;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 7.50px;
+  position: absolute;
+  text-shadow: 0px 4px 7px #0000001a;
+  font-family: "Rammetto One", Helvetica;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.boost-yourself .bootstrap-buttons {
+  position: absolute;
+  width: 139px;
+  height: 55px;
+  top: 440px;
+  left: 651px;
+  box-shadow: 0px 4px 7px #0000001a;
+}
+
+.boost-yourself .element-wrapper {
+  position: relative;
+  width: 160px;
+  height: 57px;
+  top: -1px;
+  left: -11px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.boost-yourself .element {
+  position: absolute;
+  width: 141px;
+  top: 17px;
+  left: 9px;
+  font-family: "Rammetto One", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+.boost-yourself .overlap-3 {
+  position: absolute;
+  width: 1440px;
+  height: 1039px;
+  top: 2392px;
+  left: 0;
+}
+
+.boost-yourself .overlap-wrapper {
+  top: 0;
+  position: absolute;
+  width: 1440px;
+  height: 750px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.boost-yourself .overlap-4 {
+  position: relative;
+  height: 750px;
+  background-image: url(https://c.animaapp.com/33LkDnZQ/img/rectangle-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.boost-yourself .wij-zijn-concapps-3 {
+  width: 1170px;
+  top: 295px;
+  left: 135px;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 7.50px;
+  position: absolute;
+  text-shadow: 0px 4px 7px #0000001a;
+  font-family: "Rammetto One", Helvetica;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.boost-yourself .overlap-group-wrapper {
+  position: absolute;
+  width: 139px;
+  height: 55px;
+  top: 400px;
+  left: 651px;
+  box-shadow: 0px 4px 7px #0000001a;
+}
+
+.boost-yourself .div-wrapper {
+  position: relative;
+  width: 160px;
+  height: 57px;
+  top: -1px;
+  left: -11px;
+  background-color: #000000;
+  border-radius: 4px;
+}
+
+.boost-yourself .element-2 {
+  width: 141px;
+  left: 9px;
+  font-family: "Rammetto One", Helvetica;
+  font-weight: 400;
+  position: absolute;
+  top: 17px;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+.boost-yourself .footer-veld {
+  position: absolute;
+  width: 1440px;
+  height: 290px;
+  top: 749px;
+  left: 0;
+}
+
+.boost-yourself .overlap-5 {
+  position: absolute;
+  width: 1168px;
+  height: 87px;
+  top: 123px;
+  left: 136px;
+}
+
+.boost-yourself .contact {
+  position: absolute;
+  width: 588px;
+  height: 85px;
+  top: 2px;
+  left: 0;
+}
+
+.boost-yourself .bezoekadres-veemarkt {
+  position: absolute;
+  width: 292px;
+  top: 0;
+  left: 0;
+  font-family: "ABeeZee", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0.23px;
+  line-height: 28px;
+}
+
+.boost-yourself .telefoon {
+  position: absolute;
+  width: 292px;
+  top: 0;
+  left: 292px;
+  font-family: "ABeeZee", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0.23px;
+  line-height: 28px;
+}
+
+.boost-yourself .lorem-ipsum-dolor-si {
+  width: 584px;
+  top: 0;
+  left: 584px;
+  font-size: 14px;
+  letter-spacing: 0.23px;
+  line-height: 28px;
+  position: absolute;
+  font-family: "ABeeZee", Helvetica;
+  font-weight: 400;
+  color: #000000;
+}
+
+.boost-yourself .text-wrapper-3 {
+  position: absolute;
+  width: 278px;
+  top: 73px;
+  left: 720px;
+  font-family: "Rammetto One", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0.33px;
+  line-height: normal;
+}
+
+.boost-yourself .group {
+  position: absolute;
+  width: 214px;
+  height: 15px;
+  top: 80px;
+  left: 135px;
+}
+
+.boost-yourself .instagram-social {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 199px;
+}
+
+.boost-yourself .overlap-group-2 {
+  position: relative;
+  height: 15px;
+}
+
+.boost-yourself .fill {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 3px;
+  left: 11px;
+}
+
+.boost-yourself .fill-2 {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 3px;
+  left: 3px;
+}
+
+.boost-yourself .fill-3 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 0;
+}
+
+.boost-yourself .shape-2 {
+  position: absolute;
+  width: 8px;
+  height: 15px;
+  top: 0;
+  left: 0;
+}
+
+.boost-yourself .fill-4 {
+  position: absolute;
+  width: 15px;
+  height: 12px;
+  top: 1px;
+  left: 63px;
+}
+
+.boost-yourself .pinterest-icon {
+  position: absolute;
+  width: 12px;
+  height: 15px;
+  top: 0;
+  left: 132px;
+}
+
+.boost-yourself .content {
+  height: 414px;
+  top: 930px;
+  position: absolute;
+  width: 1440px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.boost-yourself .rectangle {
+  position: absolute;
+  width: 525px;
+  height: 414px;
+  top: 0;
+  left: 915px;
+  object-fit: cover;
+}
+
+.boost-yourself .group-2 {
+  position: absolute;
+  width: 689px;
+  height: 254px;
+  top: 80px;
+  left: 135px;
+}
+
+.boost-yourself .overlap-group-3 {
+  position: relative;
+  height: 174px;
+  top: 55px;
+}
+
+.boost-yourself .text-wrapper-4 {
+  width: 689px;
+  top: 0;
+  left: 0;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 5.50px;
+  position: absolute;
+  text-shadow: 0px 4px 7px #0000001a;
+  font-family: "Rammetto One", Helvetica;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.boost-yourself .p {
+  position: absolute;
+  width: 689px;
+  top: 46px;
+  left: 0;
+  font-family: "ABeeZee", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+.boost-yourself .content-2 {
+  height: 634px;
+  top: 1344px;
+  position: absolute;
+  width: 1440px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.boost-yourself .rectangle-2 {
+  position: absolute;
+  width: 915px;
+  height: 634px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.boost-yourself .group-3 {
+  position: absolute;
+  width: 363px;
+  height: 446px;
+  top: 94px;
+  left: 981px;
+}
+
+.boost-yourself .wij-zijn-concapps-4 {
+  width: 359px;
+  top: 0;
+  left: 0;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 5.50px;
+  position: absolute;
+  text-shadow: 0px 4px 7px #0000001a;
+  font-family: "Rammetto One", Helvetica;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.boost-yourself .lorem-ipsum-dolor-si-2 {
+  width: 324px;
+  top: 94px;
+  left: 0;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 32px;
+  position: absolute;
+  font-family: "ABeeZee", Helvetica;
+  font-weight: 400;
+  color: #000000;
+}
+
+.boost-yourself .content-3 {
+  position: absolute;
+  width: 1440px;
+  height: 414px;
+  top: 1978px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.boost-yourself .group-4 {
+  position: absolute;
+  width: 689px;
+  height: 254px;
+  top: 80px;
+  left: 135px;
+  overflow: hidden;
+}
+
+.boost-yourself .wij-zijn-concapps-5 {
+  width: 689px;
+  top: -1px;
+  left: 0;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 5.50px;
+  position: absolute;
+  text-shadow: 0px 4px 7px #0000001a;
+  font-family: "Rammetto One", Helvetica;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.boost-yourself .overlap-group-4 {
+  position: absolute;
+  width: 170px;
+  height: 57px;
+  top: 198px;
+  left: -1px;
+  background-color: #000000;
+  border-radius: 4px;
+}
+
+.boost-yourself .element-3 {
+  width: 131px;
+  left: 19px;
+  font-family: "Ubuntu", Helvetica;
+  font-weight: 500;
+  position: absolute;
+  top: 17px;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="boost-yourself">
+      <div class="div">
+        <div class="top-header-module">
+          <div class="overlap-group">
+            <div class="wij-zijn-concapps">Wij zijn weer open!</div>
+            <div class="icon-search">
+              <div class="ic-search">
+                <img class="shape" src="https://c.animaapp.com/33LkDnZQ/img/shape.svg" />
+                <img class="img" src="img/shape.svg" />
+              </div>
+            </div>
+            <img class="icon-call" src="https://c.animaapp.com/33LkDnZQ/img/icon---call.svg" />
+            <img class="facebook" src="https://c.animaapp.com/33LkDnZQ/img/facebook@2x.png" />
+            <img class="twitter" src="https://c.animaapp.com/33LkDnZQ/img/twitter@2x.png" />
+            <img class="linkedin" src="https://c.animaapp.com/33LkDnZQ/img/linkedin@2x.png" />
+            <div class="youtube"></div>
+          </div>
+        </div>
+        <div class="menu-module">
+          <div class="overlap">
+            <div class="menu-item">Menu item</div>
+            <div class="text-wrapper">Menu item</div>
+            <div class="menu-item-2">Menu item</div>
+            <div class="menu-item-3">Menu item</div>
+            <div class="text-wrapper-2">LOGO</div>
+          </div>
+        </div>
+        <div class="header">
+          <div class="overlap-2">
+            <div class="wij-zijn-concapps-2">BOOST <br />YOURSELF</div>
+            <div class="bootstrap-buttons">
+              <div class="element-wrapper"><div class="element">ZOMER ACTIE</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="overlap-3">
+          <div class="overlap-wrapper">
+            <div class="overlap-4">
+              <div class="wij-zijn-concapps-3">JOIN THE CLUB</div>
+              <div class="overlap-group-wrapper">
+                <div class="div-wrapper"><div class="element-2">Inschrijven</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-veld">
+            <div class="overlap-5">
+              <div class="contact">
+                <div class="bezoekadres-veemarkt">Bezoekadres<br />Veemarktkade 8<br />5222AE ’s-Hertogenbosch</div>
+                <p class="telefoon">Telefoon +31 (0)73 820 0231<br />Fax +31 (0)73 820 2032<br />info@concapps.nl</p>
+              </div>
+              <p class="lorem-ipsum-dolor-si">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              </p>
+            </div>
+            <div class="text-wrapper-3">Custom content</div>
+            <div class="group">
+              <div class="instagram-social">
+                <div class="overlap-group-2">
+                  <img class="fill" src="https://c.animaapp.com/33LkDnZQ/img/fill-148.svg" />
+                  <img class="fill-2" src="https://c.animaapp.com/33LkDnZQ/img/fill-149.svg" />
+                  <img class="fill-3" src="https://c.animaapp.com/33LkDnZQ/img/fill-150.svg" />
+                </div>
+              </div>
+              <img class="shape-2" src="https://c.animaapp.com/33LkDnZQ/img/shape-2.svg" />
+              <img class="fill-4" src="https://c.animaapp.com/33LkDnZQ/img/fill-61.svg" />
+              <img class="pinterest-icon" src="https://c.animaapp.com/33LkDnZQ/img/pinterest-icon.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <img class="rectangle" src="https://c.animaapp.com/33LkDnZQ/img/rectangle-2.png" />
+          <div class="group-2">
+            <div class="overlap-group-3">
+              <div class="text-wrapper-4">Wij zijn concapps.</div>
+              <p class="p">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+                felis, ultricies nec, pellentesque eu, pretium quis, sem.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="content-2">
+          <img class="rectangle-2" src="https://c.animaapp.com/33LkDnZQ/img/rectangle-2-1.png" />
+          <div class="group-3">
+            <div class="wij-zijn-concapps-4">Groeps<br />lessen</div>
+            <p class="lorem-ipsum-dolor-si-2">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.<br /><br />Aenean massa. Cum sociis natoque penatibus
+              et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+          </div>
+        </div>
+        <div class="content-3">
+          <img class="rectangle" src="https://c.animaapp.com/33LkDnZQ/img/rectangle-2-2.png" />
+          <div class="group-4">
+            <div class="wij-zijn-concapps-5">Nieuws</div>
+            <p class="p">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+            <div class="overlap-group-4"><div class="element-3">Bekijk ons nieuws</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
